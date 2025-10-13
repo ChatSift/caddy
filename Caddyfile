@@ -1,0 +1,15 @@
+{
+  acme_dns cloudflare {env.CF_API_TOKEN}
+}
+
+api.automoderator.app {
+  reverse_proxy * http://localhost:7001
+}
+
+interactions.automoderator.app {
+  reverse_proxy * http://localhost:7002
+}
+
+logs.automoderator.app {
+  reverse_proxy * http://localhost:7003
+}
