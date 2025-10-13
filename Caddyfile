@@ -13,3 +13,7 @@ interactions.automoderator.app {
 logs.automoderator.app {
   reverse_proxy * http://127.0.0.1:7003
 }
+
+api-canary.automoderator.app {
+  reverse_proxy * http://127.0.0.1:7004
+}
