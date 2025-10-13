@@ -3,13 +3,13 @@
 }
 
 api.automoderator.app {
-  reverse_proxy * http://localhost:7001
+  reverse_proxy * http://127.0.0.1:7001
 }
 
 interactions.automoderator.app {
-  reverse_proxy * http://localhost:7002
+  reverse_proxy * http://127.0.0.1:7002
 }
 
 logs.automoderator.app {
-  reverse_proxy * http://localhost:7003
+  reverse_proxy * http://127.0.0.1:7003
 }
