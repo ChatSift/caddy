@@ -5,6 +5,8 @@ services:
       dockerfile: ./Dockerfile
     env_file:
       - ./.env
+    networks:
+      - host
     volumes:
       - caddy-data:/data
       - caddy-config:/config
