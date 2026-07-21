@@ -17,3 +17,7 @@ logs.automoderator.app {
 api-canary.automoderator.app {
   reverse_proxy * http://127.0.0.1:7004
 }
+
+grafana.automoderator.app {
+  reverse_proxy * http://127.0.0.1:6235
+}
