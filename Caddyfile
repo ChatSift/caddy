@@ -21,3 +21,7 @@ api-canary.automoderator.app {
 grafana.automoderator.app {
   reverse_proxy * http://127.0.0.1:6235
 }
+
+dozzle.automoderator.app {
+  reverse_proxy * http://127.0.0.1:6234
+}
