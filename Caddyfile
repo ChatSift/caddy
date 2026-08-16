@@ -3,7 +3,7 @@
 }
 
 api.automoderator.app {
-  reverse_proxy * http://127.0.0.1:7005
+  reverse_proxy * http://127.0.0.1:7004
 }
 
 interactions.automoderator.app {
@@ -12,10 +12,6 @@ interactions.automoderator.app {
 
 logs.automoderator.app {
   reverse_proxy * http://127.0.0.1:7003
-}
-
-api-canary.automoderator.app {
-  reverse_proxy * http://127.0.0.1:7004
 }
 
 grafana.automoderator.app {
