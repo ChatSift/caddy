@@ -13,5 +13,7 @@ services:
 volumes:
   caddy-data:
     name: 'chatsift-caddy-data'
+    external: true
   caddy-config:
     name: 'chatsift-caddy-config'
+    external: true
